@@ -1,0 +1,90 @@
+/* minimal css reset skall alltid vara med först i filen*/
+/* en stjärna betyder att all kod får denna kod i början sen kan man anpassa den se ex. h1 och h2.*/
+*,
+*::before,
+*::after { box-sizing: border-box; margin: 0; padding: 0;}
+
+/*img, video { max-width: 100%; height: auto;}*/
+
+/* button reset annars blir inte button och links samma storlek */
+button, input[type="submit"] {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body, h1, h2, h3, h4, h5, h6, ol, ul {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+  text-align: left;
+}
+/*End css reset*/
+
+html {
+  font-family:  'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #121212;
+  background-color: white;
+}
+
+h1, h2, h3 {
+  color: #4a4a4a;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.accordion {
+  cursor:pointer;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #f0faeb; 
+}
+
+.panel {
+  display: none;
+}
