@@ -76,15 +76,113 @@ p {
   margin: 0 auto;
 }
 
+.navi {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: grey;
+}
+
 .accordion {
   cursor:pointer;
   transition: 0.4s;
 }
 
-.active, .accordion:hover {
+/* List vertical and horisontel */
+
+.list-hori {
+  display: flex;
+  justify-content:space-around;
+  border: 1px solid black;
+}
+
+.list-verti {
+  border: 1px solid black;
+}
+
+.list-verti li{
+  text-align: left;
+  padding:8px 16px;
+  border-bottom: 1px solid black;
+}
+
+.list-verti li:last-child{
+  border-bottom: none;
+}
+
+.list-hori li {
+  text-align: center;
+  padding:8px 0;
+  /*border-right: 1px solid black;*/
+}
+
+.list-hori li:last-child {
+  /*border-right: none;*/
+}
+
+.list-hori li, .list-verti li{
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.no-border {
+  border:none;
+}
+
+.list-small li {
+  font-size: 0.8rem;
+  padding-top:6px;
+  padding-bottom:6px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  margin-top: 0.8rem;
+  margin-left: 0.8rem;
+  z-index: 1;
+  border:1px solid black;
+  background-color: white;
+  display: none;
+}
+
+.dropdown-content li {
+  display: block;
+  width:100%;
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid black;
+}
+
+.dropdown-content li:last-child {
+  border-bottom: none;
+}
+
+
+.drop-btn {
+  width:100%;
+}
+
+.drop-btn:hover > ul .dropdown-content {
+  display: block;
+}
+
+.show {
+  display: block;
+}
+
+.active {
   background-color: #f0faeb; 
 }
 
 .panel {
   display: none;
+}
+
+.green {
+  background-color: #daf5e1;
 }
